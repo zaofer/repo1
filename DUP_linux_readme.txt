@@ -2,6 +2,9 @@
 
 DELL UPDATE PACKAGES README FOR LINUX
 
+NOW change
+
+
 ######################################################################
 
 Version 16.06.201
@@ -229,7 +232,7 @@ KNOWN ISSUES
 For all Dell Update Packages
 ----------------------------------------------------------------------
 * On a Hyper-V virtual machine setup, while updating the Host OS components, 
-  ensure that the Guest OS’s is not running.
+  ensure that the Guest OSâ€™s is not running.
 
 * If you try to run the inventory for after the Broadcom Inventory 
   Collector is run, then Mellanox Inventory Collector fails. To resolve, 
@@ -347,8 +350,8 @@ For all Dell Update Packages
   the update is successful but the following error message may be 
   displayed:
 
-  "… mount: block device /dev/secmasupd-SECUPD is write-protected … 
-   /bin/cp: cannot create regular file …"
+  "â€¦ mount: block device /dev/secmasupd-SECUPD is write-protected â€¦ 
+   /bin/cp: cannot create regular file â€¦"
                                                         
 * When you try to execute DUPs on a 64-bit RHEL operating system, it 
   fails to execute since DUP is a 32-bit application. To work around 
@@ -408,20 +411,20 @@ Unified Server Configurator (USC) Dell Update Packages (DUPs)
   arbitration service of VMware ESX 4.1 and timeout occurs. The 
   timeout occurs in the following instances:
 
- • When you start “DSM SA Shared Service” on the VMware ESX 4.1 managed 
+ â€¢ When you start â€œDSM SA Shared Serviceâ€ on the VMware ESX 4.1 managed 
    node, it runs Inventory Collector. To work around this issue,
    uninstall Server Administrator or wait until the Inventory Collector
    completes 
-   execution before attempting to stop the “DSM SA Shared Service”.
+   execution before attempting to stop the â€œDSM SA Shared Serviceâ€.
 
- • When you manually try to run DUPs or the Inventory Collector on the 
+ â€¢ When you manually try to run DUPs or the Inventory Collector on the 
    VMware ESX 4.1 managed node while USB arbitration service is running. 
    To fix the issue, stop the USB arbitration service and run the DUPs
    or the Inventory Collector.
    To stop the USB arbitration service: 
-   1. Use the “ps aux|grep usb” to check if the USB arbitration 
+   1. Use the â€œps aux|grep usbâ€ to check if the USB arbitration 
       service is running.
-   2. Use the “chkconfig usbarbitrator off” command to prevent the USB 
+   2. Use the â€œchkconfig usbarbitrator offâ€ command to prevent the USB 
       arbitration service from starting during boot.
    3. After you stop the usbarbitrator, reboot the server to allow the 
       DUPs and/or the Inventory collector to run.
@@ -471,7 +474,7 @@ BIOS
   2. Press "e" again on the 'uppermem=' line and edit uppermem=819200.    
   3. Press "Enter".
   4. Press "e" on the kernel line (below the uppermem line).
-     Edit the kernel line with mem=800M and press “Enter”.
+     Edit the kernel line with mem=800M and press â€œEnterâ€.
   5. Press "b" to boot with these options.
   6. Perform the firmware update.
 
@@ -623,13 +626,13 @@ Information in this document is subject to change without notice.
 Reproduction of these materials in any manner whatsoever without the 
 written permission of Dell Inc. is strictly forbidden.
 
-Trademarks used in this text: Dell®, PowerVault®, PowerEdge® and 
-OpenManage® are trademarks of Dell Inc.; Intel® is a registered 
-trademark of Intel Corporation; Red Hat® and Red Hat Enterprise 
-Linux® are registered trademarks of Red Hat, Inc.; SUSE® is a 
+Trademarks used in this text: DellÂ®, PowerVaultÂ®, PowerEdgeÂ® and 
+OpenManageÂ® are trademarks of Dell Inc.; IntelÂ® is a registered 
+trademark of Intel Corporation; Red HatÂ® and Red Hat Enterprise 
+LinuxÂ® are registered trademarks of Red Hat, Inc.; SUSEÂ® is a 
 registered trademark of Novell, Inc. in the United States and other 
-countries; VMware® is a registered trademark and ESX Server® is a 
-trademark of VMware, Inc.; Citrix® and XenServer® are either 
+countries; VMwareÂ® is a registered trademark and ESX ServerÂ® is a 
+trademark of VMware, Inc.; CitrixÂ® and XenServerÂ® are either 
 trademarks or registered trademarks of Citrix Systems, Inc. in the 
 United States and/or other countries.
 
